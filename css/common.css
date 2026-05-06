@@ -1,5 +1,6 @@
-/* 레이아웃 */
 :root {
+  /* 레이아웃 */
+
   /* Color styles */
   --deep-green: rgba(27, 65, 55, 1);
   --light-green: rgba(61, 211, 123, 1);
@@ -14,9 +15,8 @@
   --mint-green: rgba(194, 235, 221, 1);
   --알약-green-05: rgba(61, 211, 123, 0.5);
   --stroke: rgba(186, 204, 191, 1);
-}
-/* 타이포그래피 */
-:root {
+
+  /* 타이포그래피 */
   --font-heading: "Do Hyeon", sans-serif;
   --font-body: "Google Sans Flex", sans-serif;
 }

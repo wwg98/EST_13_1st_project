@@ -60,7 +60,7 @@
   font-family: var(--font-body);
   font-weight: 500; /* Medium */
   font-size: 30px;
-  line-height: 0.8; /* 24/30 (피그마 수치 그대로 반영) */
+  line-height: 1.6; /* 24/30 (피그마 수치 그대로 반영) */
 }
 
 .body-large-medium,
@@ -108,6 +108,13 @@
   font-size: 14px;
   line-height: 1.71; /* 24/14 */
 }
+
+/* 레이아웃 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* 링크 버튼 */
 
 /* 콘텐츠1 - 이성희 */

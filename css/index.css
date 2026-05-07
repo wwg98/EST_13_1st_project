@@ -6,13 +6,19 @@
 }
 
 .testimonial-list {
-  gap: calc(var(--base-unit) * 2);
+  gap: var(--base-unit);
   transition: transform 0.5s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 .testimonial-wrapper {
+  width: 1173px;
   overflow: hidden;
   margin: 0 auto;
 }
+
 .testimonial-list li {
   display: flex;
   flex-direction: column;
@@ -24,11 +30,13 @@
   border-radius: 10px;
 
   gap: calc(var(--base-unit) * 2);
-  padding: var(--base-unit) calc(var(--base-unit) * 2);
+  padding: calc(var(--base-unit) * 2) var(--base-unit);
   width: 375px;
   height: 528px;
 
   text-align: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .orange {

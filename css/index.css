@@ -1,5 +1,21 @@
 /* 컨텐츠1 - 이성희 */
 /* 컨텐츠2 - 맹예진 */
+.circle-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange {
+  color: var(--orange);
+}
+.alyac {
+  color: var(--alyac-green);
+}
 /* 컨텐츠3 - 장진혁 */
 /* 컨텐츠4 - 주성뮨 */
 /* 컨텐츠5 - 최호찬 */

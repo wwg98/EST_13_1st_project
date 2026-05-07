@@ -12,16 +12,16 @@
 .section-features {
   height: 384px;
 }
-
-.section-features ul {
+.section-features > * {
+  display: flex;
 }
+
 .section-features ul li {
   background: var(--deep-green);
   border-radius: 10px;
   color: var(--white);
   width: 483px;
   height: 48px;
-  flex-wrap: wrap;
 }
 
 .section-company {

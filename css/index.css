@@ -234,4 +234,182 @@ body {
 }
 /* 컨텐츠4 - 주성문 */
 /* 컨텐츠5 - 최호찬 */
+/* employment section css  */
+.section-employment {
+  width: 100%;
+  height: auto;
+  padding: calc(var(--base-unit) * 3) 0;
+  background: var(--deep-green);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.section-employment .container {
+  position: relative;
+}
+.text-orange {
+  color: var(--orange);
+}
+.section-employment h1:first-child {
+  margin-bottom: var(--base-unit);
+}
+.section-employment h2:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.box-employment {
+  width: 1200px;
+  height: 240px;
+  background: var(--navy);
+  padding: 60px;
+  margin: calc(var(--base-unit) * 3) 0;
+  box-sizing: border-box;
+}
+.q-employment,
+.a-employment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-employment .container {
+  position: relative;
+}
+.section-employment .est-name {
+  width: 400px;
+  height: 60px;
+  background: var(--light-green);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 235px;
+}
+/* visual section css */
+.section-visual {
+  width: 100%;
+  padding: calc(var(--base-unit) * 3) 0;
+}
+.section-visual .container {
+  width: 1200px;
+  margin: 0 auto;
+  border: solid 1px var(--grey-green);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.figure-visual {
+  flex: 0 0 580px;
+  margin: 0;
+}
+.figure-visual img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+.content-visual {
+  flex: 0 1 500px;
+}
+
+.title-visual {
+  margin-bottom: 24px;
+  max-width: 9em;
+}
+
+.desc-visual {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  word-break: keep-all;
+}
+.visual-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.visual-status-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avatar-group {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.avatar-group li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-left: -16px;
+}
+.avatar-group li:first-child {
+  margin-left: 0;
+  background: #e2f0e8;
+}
+.avatar-group li:nth-child(2) {
+  background: #cbe1d3;
+}
+.avatar-group li:nth-child(3) {
+  background: #94b8a2;
+}
+.avatar-group li.visual-count {
+  background: #1b4123;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-text strong {
+  display: block;
+}
+
+/* footer style css */
+footer {
+  background-color: #e2e8f0;
+  padding: var(--base-unit);
+  color: var(--navy);
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--base-font) * 3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-nav {
+  display: flex;
+  padding-bottom: var(--base-unit);
+  gap: 30px;
+}
+.social-icons {
+  display: flex;
+  gap: var(--base-font);
+  margin-bottom: 32px;
+  justify-content: flex-end;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--mint-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons img {
+  width: 24px;
+  height: auto;
+  display: block;
+}
 /* 컨텐츠6 - 김태현 */

@@ -1,5 +1,58 @@
 /* 컨텐츠1 - 이성희 */
 /* 컨텐츠2 - 맹예진 */
+
+.section-features,
+.section-features ul li,
+.section-differentiation {
+  background: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-features {
+  height: 384px;
+}
+
+.section-features ul {
+}
+.section-features ul li {
+  background: var(--deep-green);
+  border-radius: 10px;
+  color: var(--white);
+  width: 483px;
+  height: 48px;
+  flex-wrap: wrap;
+}
+
+.section-company {
+  text-align: center;
+}
+.company-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-introduction li {
+  width: 282px;
+  height: 180px;
+  background: var(--light-green);
+  border-radius: 10px;
+  padding: 18px 0;
+}
+
+.section-differentiation div {
+  display: flex;
+}
+
+.compare-target {
+  background: #d9d9d9;
+  padding: 12px 83px;
+}
+.compare-EST {
+  background: var(--orange);
+}
+
 .circle-icon {
   width: 48px;
   height: 48px;
@@ -16,6 +69,7 @@
 .alyac {
   color: var(--alyac-green);
 }
+
 /* 컨텐츠3 - 장진혁 */
 /* 컨텐츠4 - 주성뮨 */
 /* 컨텐츠5 - 최호찬 */

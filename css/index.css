@@ -39,6 +39,15 @@
   box-sizing: border-box;
 }
 
+.testimonial-button {
+  width: 45px;
+  height: 45px;
+  color: var(--grey-green);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .orange {
   color: var(--orange);
 }

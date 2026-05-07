@@ -115,6 +115,10 @@
   margin: 0 auto;
 }
 
+.section {
+  padding: calc(var(--base-unit) * 3) 0;
+}
+
 /* 링크 버튼 */
 
 /* 콘텐츠1 - 이성희 */

@@ -166,12 +166,7 @@ body {
 }
 
 .btn-apply:hover {
-  background-color: rgba(
-    0,
-    199,
-    122,
-    0.1
-  ); /* 마우스 오버 시 살짝 초록빛 배경 */
+  background-color: rgba(0, 199, 122, 0.1); /* 마우스 오버 시 살짝 초록빛 배경 */
   transform: translateY(-3px); /* 위로 살짝 올라가는 애니메이션 */
 }
 

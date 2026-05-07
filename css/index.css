@@ -40,7 +40,9 @@
   border-radius: 10px;
   padding: 18px 0;
 }
-
+.section-differentiation {
+  height: 744px;
+}
 .section-differentiation div {
   display: flex;
 }

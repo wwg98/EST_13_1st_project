@@ -1,12 +1,7 @@
 /* 컨텐츠1 - 이성희 */
-/* =========================================
-   1차 프로젝트 8조 - Hero Banner 영역 (이성희)
-========================================= */
-
 /* 전체 배경 및 폰트 설정 (필요시 common.css로 이동) */
 body {
   font-family: "Google Sans Flex", "Do Hyeon", sans-serif;
-  background-color: #0d121c; /* 이미지와 유사한 어두운 네이비 배경 */
   color: #ffffff;
 }
 

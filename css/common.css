@@ -70,7 +70,8 @@
   font-size: 20px;
   line-height: 1.2; /* 24/20 */
 }
-body-large-up {
+
+.body-large-up {
   text-transform: uppercase;
 }
 

@@ -1,3 +1,6 @@
+@import url("normalize.css");
+@import url("reset.css");
+
 :root {
   /* 레이아웃 */
   --base-unit: 24px;

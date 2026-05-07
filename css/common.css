@@ -123,16 +123,6 @@
 
 /* 콘텐츠1 - 이성희 */
 /* 콘텐츠2 - 멩예진 */
-.circle-icon {
-  width: 48px;
-  height: 48px;
-  background: var(--orange);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* 콘텐츠3 - 장진혁 */
 /* 콘텐츠4 - 주성문 */
 /* 콘텐츠5 - 최호찬 */

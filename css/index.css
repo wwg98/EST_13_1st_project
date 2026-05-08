@@ -671,6 +671,7 @@ section {
   border: solid 1px var(--grey-green);
   border-radius: 16px;
   justify-content: space-between;
+  padding: calc(var(--base-unit) * 3) 10px;
 }
 .figure-visual {
   flex: 0 0 580px;

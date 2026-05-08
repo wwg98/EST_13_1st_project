@@ -15,9 +15,7 @@ body {
   z-index: 100;
 }
 
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
+.header-container {
   padding: 0 px;
   display: flex;
   justify-content: space-between;
@@ -58,8 +56,6 @@ body {
 }
 .banner-container {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 0px;
   display: flex;
   justify-content: space-between;
@@ -307,6 +303,7 @@ body {
   .course-details-grid {
     grid-template-columns: repeat(2, 1fr); /* 2칸으로 변경 */
   }
+}
 
 /* 컨텐츠2 - 맹예진 */
 
@@ -754,7 +751,7 @@ section {
   background: var(--deep-green);
 }
 .section-employment .container {
-  color: white;
+  color: var(--white);
   position: relative;
 }
 .text-orange {
@@ -801,7 +798,6 @@ section {
   margin: 0 auto;
   border: solid 1px var(--grey-green);
   border-radius: 16px;
-  justify-content: space-between;
   padding: calc(var(--base-unit) * 3) 10px;
 }
 .figure-visual {
@@ -828,7 +824,7 @@ section {
   word-break: keep-all;
 }
 .visual-status {
-  gap: 16px;
+  gap: var(--base-font);
 }
 .visual-status-text {
   gap: 4px;
@@ -874,12 +870,11 @@ footer {
 }
 
 footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: calc(var(--base-font) * 3);
   align-items: flex-end;
 }
 .footer-nav {
+  display: flex;
   padding-bottom: var(--base-unit);
   gap: 30px;
 }

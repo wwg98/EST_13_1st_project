@@ -187,7 +187,8 @@ section {
 .features-box {
   width: 1041px;
 }
-.slogan {
+.slogan,
+.section-jobstatus {
   color: black;
 }
 .section-features,
@@ -269,7 +270,6 @@ section {
   align-items: center;
   gap: 98px;
 }
-
 .circle-icon {
   width: 48px;
   height: 48px;
@@ -280,6 +280,11 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.section-jobstatus div:first-child > * {
+  margin-bottom: 24px;
+}
+
 .orange {
   color: var(--orange);
 }

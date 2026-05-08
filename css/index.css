@@ -281,8 +281,29 @@ section {
   align-items: center;
 }
 
+.section-jobstatus {
+  overflow: hidden;
+}
 .section-jobstatus div:first-child > * {
   margin-bottom: 24px;
+}
+.company-status {
+  padding: 70px 0;
+  animation-name: movement;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes movement {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .orange {

@@ -295,7 +295,7 @@ body {
   padding: 40px;
   background-color: white;
   color: #545f72;
-  align-items: flex-start; /* 왼쪽 정렬 */
+  align-items: flex-start;
   gap: auto;
 }
 
@@ -400,8 +400,7 @@ body {
   background-color: #98e4ba;
 }
 
-/* 5. 취업 지원: 현재 시안상으로는 3행으로 가거나 배치가 필요함 */
-/* 시안(첫번째 이미지)처럼 한 줄에 3개를 넣고 싶다면 grid-row를 2로 맞추면 됩니다. */
+/* 5. 취업 지원 */
 .benefits-grid li:nth-child(5) {
   grid-column: 3 / 4;
   grid-row: 3 / 4; /* 시안 캡처본 위치 기준 */

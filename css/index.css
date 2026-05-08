@@ -306,6 +306,33 @@ section {
   }
 }
 
+.section-portfolio {
+  background: var(--deep-green);
+}
+.section-portfolio h2 {
+  margin-bottom: var(--base-unit);
+}
+.section-portfolio h3 {
+  margin-top: calc(var(--base-unit) * 3);
+  margin-bottom: calc(var(--base-unit) * 2);
+}
+
+.portfolio-img {
+  position: relative;
+  height: 456px;
+}
+.portfolio-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 6s linear;
+}
+.portfolio-img img.active {
+  opacity: 1;
+}
+/* 한 영역 안에서 이미지가 계속 바뀌는 효과는 순수 CSS로는 구현이 어려워 js 학습 후 진행 */
+
 .orange {
   color: var(--orange);
 }

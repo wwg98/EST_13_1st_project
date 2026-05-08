@@ -941,6 +941,24 @@ section {
 /* recruitment section css */
 
 /* 컨텐츠5 - 최호찬 */
+/* navigation section css */
+.section-navigation {
+  width: 100%;
+  height: auto;
+  background: var(--background-grey);
+}
+.section-navigation .container {
+  height: 48px;
+  color: var(--white);
+  padding: 0 auto;
+}
+.section-navigation .container ul {
+  gap: 50px;
+}
+.section-navigation .container a:hover {
+  color: var(--light-green);
+}
+
 /* employment section css  */
 .section-employment {
   width: 100%;
@@ -969,6 +987,7 @@ section {
   padding: 60px;
   margin: calc(var(--base-unit) * 3) 0;
   box-sizing: border-box;
+  border-radius: 15px;
 }
 .q-employment,
 .a-employment {

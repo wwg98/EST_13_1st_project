@@ -327,7 +327,7 @@ section {
   gap: calc(var(--base-unit) * 2);
   padding: calc(var(--base-unit) * 2) var(--base-unit);
   width: 375px;
-  height: 528px;
+  height: calc(var(--base-unit) * 22);
 
   text-align: center;
   flex-shrink: 0;
@@ -341,10 +341,6 @@ section {
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.orange {
-  color: var(--orange);
 }
 
 /* 수강 종류 부분 */
@@ -374,6 +370,50 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+
+/* 커리큘럼 부분 */
+.curriculum-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.curriculum-list li {
+  width: 272px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 12px;
+
+  padding: var(--base-unit) var(--base-unit) 52px var(--base-unit);
+  box-sizing: border-box;
+}
+
+.curriculum-list li > p {
+  color: var(--background-grey);
+  padding: 0 4px 0 0;
+}
+
+.curriculum-overlay {
+  background: var(--background-grey);
+  border-radius: 9999px;
+  padding: 4px 12px;
+}
+
+.curriculum-bh32 {
+  height: 32px;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.light-green {
+  color: var(--light-green);
 }
 
 /* 컨텐츠4 - 주성문 */

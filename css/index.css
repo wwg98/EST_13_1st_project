@@ -292,17 +292,6 @@ body {
   font-size: 20px;
 }
 
-/* 반응형 처리 (모바일 화면) */
-@media (max-width: 768px) {
-  .course-summary-wrap {
-    flex-direction: column; /* 세로 배치 */
-  }
-  .course-thumbnail {
-    width: 100%;
-  }
-  .course-details-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2칸으로 변경 */
-  }
 
   /* 컨텐츠2 - 맹예진 */
 

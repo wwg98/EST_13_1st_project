@@ -291,13 +291,15 @@ section {
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function:;
+  animation-timing-function: linear;
 }
 
 @keyframes movement {
   from {
+    transform: translateX(0);
   }
   to {
+    transform: translateX(-40%);
   }
 }
 

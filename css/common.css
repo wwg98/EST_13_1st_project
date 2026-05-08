@@ -121,6 +121,14 @@
   padding: calc(var(--base-unit) * 3) 0;
 }
 
+.hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
 /* 링크 버튼 */
 
 /* 콘텐츠1 - 이성희 */

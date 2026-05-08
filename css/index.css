@@ -1,5 +1,290 @@
 /* 컨텐츠1 - 이성희 */
+/* 전체 배경 및 폰트 설정 (필요시 common.css로 이동) */
+body {
+  font-family: "Google Sans Flex", "Do Hyeon", sans-serif;
+  color: #ffffff;
+}
+
+/* 1. 헤더 영역 */
+.header {
+  position: absolute; /* 배너 위에 띄우기 위해 절대 위치 사용 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /* 로고 이미지에 맞게 조절*/
+}
+
+.global-nav ul {
+  display: flex;
+  gap: 100px;
+}
+
+.global-nav a {
+  color: #a1a1aa; /* 옅은 회색 */
+  font-size: 28px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.global-nav a:hover {
+  color: #ffffff; /* 마우스 오버 시 흰색으로 강조 */
+}
+
+/* 2. 메인 배너 영역 */
+.hero-banner {
+  position: relative;
+  min-height: 70vh; /* 화면 전체 높이 사용 */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("../images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* --- 왼쪽 텍스트 콘텐츠 --- */
+.banner-text-content {
+  flex: 1;
+  max-width: 663px;
+}
+
+.badge-text {
+  color: #3dd37b; /* 이스트캠프 포인트 그린 컬러 */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 72px;
+  line-height: 125%;
+  font-weight: Regular;
+  margin-bottom: 50px;
+  word-break: keep-all; /* 단어 단위로 줄바꿈 */
+}
+
+.main-title .highlight {
+  color: #fe7102; /* 오렌지색 하이라이트 */
+}
+
+/* 특징 리스트 */
+.feature-list {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 64px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #3dd37b; /* 초록색 테두리 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 199, 122, 0.05);
+  flex-shrink: 0;
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.desc-title {
+  font-size: 16px;
+  font-weight: regular;
+  color: #ffffff;
+}
+
+.desc-sub {
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+/* 지원하기 버튼 */
+.cta-wrap {
+  display: inline-block;
+}
+
+.btn-apply {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 25px;
+  border: 1px solid #3dd37b; /* 초록색 테두리 */
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: Regular;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+  background-color: rgba(0, 199, 122, 0.1); /* 마우스 오버 시 살짝 초록빛 배경 */
+  transform: translateY(-0.5px); /* 위로 살짝 올라가는 애니메이션 */
+}
+
+.arrow-icon {
+  margin-left: 21px;
+  font-size: 24px;
+}
+
+.banner-image img {
+  /* 이미지가 너무 클 경우를 대비해 최대 너비 제한 */
+  max-height: 1920px;
+  object-fit: contain;
+}
+
 /* 컨텐츠2 - 맹예진 */
+
+section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.features-box {
+  width: 1041px;
+}
+.section-features,
+.section-compare {
+  background: var(--light-grey);
+}
+.section-features {
+  height: 192px;
+}
+.section-features h2 {
+  margin-bottom: 48px;
+}
+.section-features ul li {
+  background: var(--deep-green);
+  border-radius: 10px;
+  color: var(--white);
+  width: 483px;
+  padding: 12px 0;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.section-company h2 {
+  margin-bottom: 24px;
+}
+
+.company-introduction li {
+  width: 282px;
+  height: 180px;
+  background: var(--light-green);
+  border-radius: 10px;
+  padding: 18px 0;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* 차별점 */
+
+.section-compare {
+  height: 600px;
+}
+.section-compare > div:first-child {
+  position: relative;
+}
+.section-compare .orange {
+  margin-bottom: 24px;
+}
+.compare-box > div {
+  position: absolute;
+  left: 459px;
+  top: 117px;
+}
+.compare-box > div:first-child {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+.compare-target {
+  background: #d9d9d9;
+  width: 281px;
+  height: 48px;
+  border-radius: 20px 20px 0 0;
+}
+.compare-est {
+  background: var(--orange);
+  color: var(--white);
+  width: 384px;
+  height: 96px;
+  border-radius: 20px 20px 0 0;
+}
+.compare-list {
+  width: 665px;
+  margin-top: 24px;
+  position: absolute;
+  left: 739px;
+  top: 214px;
+}
+.compare-text {
+  display: flex;
+  align-items: center;
+  gap: 98px;
+}
+
+.circle-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange {
+  color: var(--orange);
+}
+.alyac {
+  color: var(--alyac-green);
+}
+
 /* 컨텐츠3 - 장진혁 */
 .section-testimonial > div,
 .section-lecture > div {
@@ -54,4 +339,182 @@
 }
 /* 컨텐츠4 - 주성문 */
 /* 컨텐츠5 - 최호찬 */
+/* employment section css  */
+.section-employment {
+  width: 100%;
+  height: auto;
+  padding: calc(var(--base-unit) * 3) 0;
+  background: var(--deep-green);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.section-employment .container {
+  position: relative;
+}
+.text-orange {
+  color: var(--orange);
+}
+.section-employment h1:first-child {
+  margin-bottom: var(--base-unit);
+}
+.section-employment h2:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.box-employment {
+  width: 1200px;
+  height: 240px;
+  background: var(--navy);
+  padding: 60px;
+  margin: calc(var(--base-unit) * 3) 0;
+  box-sizing: border-box;
+}
+.q-employment,
+.a-employment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-employment .container {
+  position: relative;
+}
+.section-employment .est-name {
+  width: 400px;
+  height: 60px;
+  background: var(--light-green);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 235px;
+}
+/* visual section css */
+.section-visual {
+  width: 100%;
+  padding: calc(var(--base-unit) * 3) 0;
+}
+.section-visual .container {
+  width: 1200px;
+  margin: 0 auto;
+  border: solid 1px var(--grey-green);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.figure-visual {
+  flex: 0 0 580px;
+  margin: 0;
+}
+.figure-visual img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+.content-visual {
+  flex: 0 1 500px;
+}
+
+.title-visual {
+  margin-bottom: 24px;
+  max-width: 9em;
+}
+
+.desc-visual {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  word-break: keep-all;
+}
+.visual-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.visual-status-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avatar-group {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.avatar-group li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-left: -16px;
+}
+.avatar-group li:first-child {
+  margin-left: 0;
+  background: #e2f0e8;
+}
+.avatar-group li:nth-child(2) {
+  background: #cbe1d3;
+}
+.avatar-group li:nth-child(3) {
+  background: #94b8a2;
+}
+.avatar-group li.visual-count {
+  background: #1b4123;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-text strong {
+  display: block;
+}
+
+/* footer style css */
+footer {
+  background-color: #e2e8f0;
+  padding: var(--base-unit);
+  color: var(--navy);
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--base-font) * 3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-nav {
+  display: flex;
+  padding-bottom: var(--base-unit);
+  gap: 30px;
+}
+.social-icons {
+  display: flex;
+  gap: var(--base-font);
+  margin-bottom: 32px;
+  justify-content: flex-end;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--mint-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons img {
+  width: 24px;
+  height: auto;
+  display: block;
+}
 /* 컨텐츠6 - 김태현 */

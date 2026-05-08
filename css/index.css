@@ -187,8 +187,12 @@ section {
 .features-box {
   width: 1041px;
 }
+<<<<<<< HEAD
 .slogan,
 .section-jobstatus {
+=======
+.slogan {
+>>>>>>> 759e50ffd24b1b0327a97f8d7f07e442bfa10e8f
   color: black;
 }
 .section-features,
@@ -270,6 +274,10 @@ section {
   align-items: center;
   gap: 98px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 759e50ffd24b1b0327a97f8d7f07e442bfa10e8f
 .circle-icon {
   width: 48px;
   height: 48px;
@@ -280,6 +288,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 
 .section-jobstatus {
   overflow: hidden;
@@ -306,6 +315,8 @@ section {
   }
 }
 
+=======
+>>>>>>> 759e50ffd24b1b0327a97f8d7f07e442bfa10e8f
 .orange {
   color: var(--orange);
 }
@@ -422,6 +433,12 @@ section {
   height: auto;
   padding: calc(var(--base-unit) * 3) 0;
   background: var(--deep-green);
+<<<<<<< HEAD
+=======
+  display: flex;
+  justify-content: center;
+  text-align: center;
+>>>>>>> 759e50ffd24b1b0327a97f8d7f07e442bfa10e8f
 }
 .section-employment .container {
   color: white;

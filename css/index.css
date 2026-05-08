@@ -235,11 +235,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 48px; /* 피그마의 Gap과 동일 (요소 사이 간격) */
-  padding: 72px 0; /* 섹션 상하 패딩 */
 }
 
 .section-benefits .section-title-area {
   text-align: center;
+  color: #012b22;
 }
 
 /* Grid Layout */
@@ -262,7 +262,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid #baccbf; /* grey-green 테두리 */
 }
 
 .benefit-card .material-icons {
@@ -273,12 +273,11 @@ body {
 
 .benefit-card .benefit-title {
   margin-bottom: 12px;
-  line-height: 1.4;
+  color: #1b4137;
 }
 
 .benefit-card .benefit-desc {
-  color: #666;
-  line-height: 1.6;
+  color: #232e3f;
 }
 /* 1번 카드: 가로로 긴 큰 카드 (교육비 0원) */
 .benefit-card--large {
@@ -286,19 +285,29 @@ body {
   grid-row: 1 / 3;
   background-image: url("../images/money.png"); /* 배경의 돈 아이콘 이미지 */
   background-repeat: no-repeat;
-  background-position: right 32px bottom 32px;
+  background-position: right 0 bottom 0;
   background-size: 150px;
   padding: 40px;
+  background-color: white;
+  color: #545f72;
 }
 
 .benefit-card--large .benefit-badge {
   display: inline-block;
-  background-color: #c4e9da;
-  color: #1d4d3a;
+  background-color: #c2ebdd;
+  color: #284e43;
   padding: 4px 12px;
-  border-radius: 20px;
+  border-radius: 9999px;
   width: fit-content;
   margin-bottom: 16px;
+}
+
+.benefit-card--large .benefit-title {
+  color: #012b22;
+}
+
+.benefit-card--large .benefit-desc {
+  color: #545f72;
 }
 
 .benefit-card--large .price-info {
@@ -308,7 +317,7 @@ body {
 
 .benefit-card--large .original-price {
   text-decoration: line-through;
-  color: #bbb;
+  color: #baccbf;
   margin-right: 12px;
 }
 
@@ -326,14 +335,29 @@ body {
   flex-direction: column;
 }
 
-.benefit-card--dark .material-icons,
+.benefit-card--dark .material-icons {
+  background-color: #fff;
+  color: #000;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 30px;
+}
+
+.benefit-card--dark .benefit-title {
+  color: #ffffff;
+}
 .benefit-card--dark .benefit-desc {
-  color: #fff;
+  color: #baccbf;
 }
 
 .benefit-card--dark .highlight-text {
   margin-top: auto;
-  color: #d4ff70; /* 형광 그린 포인트 */
+  color: #e9ff70; /* 형광 그린 포인트 */
 }
 /* 3. 학습장비 지원: 2행 1열 */
 .benefits-grid li:nth-child(3) {

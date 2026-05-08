@@ -289,10 +289,12 @@ section {
 
 /* 컨텐츠3 - 장진혁 */
 .section-testimonial > div,
-.section-lecture > div {
+.section-lecture > div,
+.section-curriculum > div {
   gap: calc(var(--base-unit) * 2);
 }
 
+/* 수강 후기 부분 */
 .testimonial-list {
   gap: var(--base-unit);
   transition: transform 0.5s ease-in-out;
@@ -340,6 +342,7 @@ section {
   color: var(--orange);
 }
 
+/* 수강 종류 부분 */
 .card-text-box p {
   color: var(--background-grey);
 }

@@ -290,8 +290,8 @@ section {
 .company-status {
   padding: 70px 0;
   animation-name: movement;
-  animation-duration: 5s;
-  animation-delay: 0.5s;
+  animation-duration: 15s;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;

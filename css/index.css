@@ -948,9 +948,6 @@ section {
   padding: calc(var(--base-unit) * 3) 0;
   background: var(--deep-green);
   color: white;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 .section-employment .container {
   color: var(--white);
@@ -975,9 +972,7 @@ section {
 }
 .q-employment,
 .a-employment {
-  display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 .section-employment .container {
   position: relative;
@@ -987,9 +982,6 @@ section {
   height: 60px;
   background: var(--light-green);
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1034,8 +1026,6 @@ section {
   gap: var(--base-font);
 }
 .visual-status-text {
-  display: flex;
-  flex-direction: column;
   gap: 4px;
 }
 
@@ -1066,9 +1056,6 @@ section {
 .avatar-group li.visual-count {
   background: #1b4123;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .status-text strong {
@@ -1084,17 +1071,13 @@ footer {
 
 footer .container {
   padding: calc(var(--base-font) * 3);
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end;
 }
 .footer-nav {
-  display: flex;
   padding-bottom: var(--base-unit);
   gap: 30px;
 }
 .social-icons {
-  display: flex;
   gap: var(--base-font);
   margin-bottom: 32px;
   justify-content: flex-end;

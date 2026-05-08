@@ -414,6 +414,11 @@ section {
   box-sizing: border-box;
 }
 
+.curriculum-list span {
+  display: flex;
+  align-items: center;
+}
+
 .curriculum-list li > p {
   color: var(--background-grey);
   padding: 0 4px 0 0;

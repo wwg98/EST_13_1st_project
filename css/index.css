@@ -340,18 +340,35 @@ section {
 }
 /* 컨텐츠4 - 주성문 */
 /* 컨텐츠5 - 최호찬 */
+/* navigation section css */
+.section-navigation {
+  width: 100%;
+  height: auto;
+  background: var(--background-grey);
+}
+.section-navigation .container {
+  height: 48px;
+  color: var(--white);
+  padding: 0 auto;
+}
+.section-navigation .container ul {
+  gap: 50px;
+}
+.section-navigation .container a:hover {
+  color: var(--light-green);
+}
 /* employment section css  */
 .section-employment {
   width: 100%;
   height: auto;
   padding: calc(var(--base-unit) * 3) 0;
   background: var(--deep-green);
-  color: white;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 .section-employment .container {
+  color: white;
   position: relative;
 }
 .text-orange {

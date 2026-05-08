@@ -16,7 +16,9 @@ body {
 }
 
 .header-container {
-  padding: 0 px;
+  max-width: 1200px; /* 최대 너비 1200px 제한 */
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +58,9 @@ body {
 }
 .banner-container {
   position: relative;
-  padding: 0px;
+  max-width: 1200px; /* 최대 너비 1200px 제한 */
+  margin: 50px auto 0;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,14 +82,14 @@ body {
   margin-bottom: 20px;
 }
 
-.main-title {
+.title-xl {
   font-size: 72px;
   line-height: 125%;
   margin-bottom: 50px;
   word-break: keep-all; /* 단어 단위로 줄바꿈 */
 }
 
-.main-title .highlight {
+.title-xl .highlight {
   color: #fe7102; /* 오렌지색 하이라이트 */
 }
 
@@ -291,18 +295,7 @@ body {
   opacity: 90%;
   font-size: 20px;
 }
-/* 반응형 처리 (모바일 화면) */
-@media (max-width: 768px) {
-  .course-summary-wrap {
-    flex-direction: column; /* 세로 배치 */
-  }
-  .course-thumbnail {
-    width: 100%;
-  }
-  .course-details-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2칸으로 변경 */
-  }
-}
+
 /* 컨텐츠2 - 맹예진 */
 
 section {
@@ -416,8 +409,8 @@ section {
 .company-status {
   padding: 70px 0;
   animation-name: movement;
-  animation-duration: 15s;
-  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
@@ -431,33 +424,6 @@ section {
     transform: translateX(-100%);
   }
 }
-
-.section-portfolio {
-  background: var(--deep-green);
-}
-.section-portfolio h2 {
-  margin-bottom: var(--base-unit);
-}
-.section-portfolio h3 {
-  margin-top: calc(var(--base-unit) * 3);
-  margin-bottom: calc(var(--base-unit) * 2);
-}
-
-.portfolio-img {
-  position: relative;
-  height: 456px;
-}
-.portfolio-img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 6s linear;
-}
-.portfolio-img img.active {
-  opacity: 1;
-}
-/* 한 영역 안에서 이미지가 계속 바뀌는 효과는 순수 CSS로는 구현이 어려워 js 학습 후 진행 */
 
 .orange {
   color: var(--orange);
@@ -551,7 +517,7 @@ section {
 }
 
 /* 컨텐츠4 - 주성문 */
-/* 수강혜택 섹션 */
+/* Section Base */
 .section-benefits .container {
   display: flex;
   flex-direction: column;
@@ -559,7 +525,7 @@ section {
   gap: 48px; /* 피그마의 Gap과 동일 (요소 사이 간격) */
 }
 
-.section-title-area {
+.section-benefits .section-title-area {
   text-align: center;
   color: #012b22;
 }
@@ -749,196 +715,6 @@ section {
   background-color: #e66000;
 }
 /* benefits section css */
-/* recruitment section css */
-.section-recruitment .container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.section-subtitle {
-  color: #3dd37b; /* light green */
-  text-align: center;
-}
-
-/* 모집 보드 (좌측 메뉴 + 우측 컨텐츠) */
-.recruitment-board {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto auto auto;
-
-  border: 1px solid #e9ecef;
-  border-radius: 16px;
-  overflow: hidden; /* 배경색이 넘치지 않게 */
-  background-color: #fff;
-}
-
-.recruitment-nav {
-  background-color: #1d352f;
-  padding: 40px 32px;
-}
-
-.recruitment-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  list-style: none;
-  padding: 0;
-}
-
-.menu-item {
-  background-color: #1d352f;
-  padding: 40px 32px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  /* 행 구분선*/
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.menu-item:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.menu-item:nth-child(2) {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.menu-item:nth-child(3) {
-  grid-column: 1;
-  grid-row: 3;
-  border-bottom: none;
-}
-
-.menu-title {
-  color: #fff;
-}
-.menu-desc {
-  color: #85ada0;
-}
-
-.recruitment-content {
-  flex: 1; /* 남은 공간 모두 차지 */
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px; /* 세로 큰 그룹 간격 */
-}
-
-.content-header,
-.recruitment-check-list,
-.process-steps {
-  padding: 32px;
-  border-bottom: 1px solid #e9ecef;
-  background: #fff;
-}
-
-/* 컨텐츠 상단 (뱃지, 날짜, D-day) */
-.content-header {
-  grid-column: 2/4;
-  grid-row: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* 양 끝 정렬 */
-  padding-bottom: 32px;
-}
-.badge--gray {
-  background-color: #e2e3e0;
-  padding: 8px 16px;
-  border-radius: 4px;
-}
-
-.date-range {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.d-day-text {
-  color: #ff6b00; /* 오렌지색 강조 */
-}
-
-/* 체크리스트 */
-.recruitment-check-list {
-  grid-column: 2/4;
-  grid-row: 2;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-}
-
-.check-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.icon-check {
-  color: #2ecc71; /* 체크 아이콘 색상 */
-}
-
-.process-steps {
-  grid-column: 2/4;
-  grid-row: 3;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* 단계들 균등 배치 */
-  gap: 8px;
-  list-style: none;
-  padding: 0;
-
-  border-bottom: none;
-}
-
-.step {
-  flex: 1;
-
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* 마지막 단계는 화살표가 없으므로 제외 */
-.step:last-child .arrow {
-  display: none;
-}
-
-.step-box {
-  flex: 1;
-
-  min-height: 96px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 4px;
-  padding: 24px 12px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* 최종 합격 박스 강조 */
-.step--final .step-box {
-  background-color: #2ecc71;
-  color: #fff;
-}
-
-.arrow {
-  color: #adb5bd;
-  font-size: 20px;
-}
-/* recruitment section css */
 
 /* 컨텐츠5 - 최호찬 */
 /* employment section css  */

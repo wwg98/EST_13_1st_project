@@ -909,7 +909,111 @@ section {
   color: #adb5bd;
   font-size: 24px;
 }
-/* recruitment section css */
+/* //recruitment section css */
+/* faq section css */
+.section-faq .container {
+  position: relative;
+}
+
+.section-faq .container .section-title-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+/* FAQ 리스트 스타일 */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* 질문 영역 (Trigger) */
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+.question-text {
+  color: #1b4137;
+  transition: color 0.3s;
+}
+
+.arrow-icon {
+  color: #48bb78; /* light green */
+  transition: transform 0.3s;
+}
+
+/* 답변 영역 */
+.faq-answer {
+  background-color: #fafafa; /* light gray */
+  padding: 32px;
+}
+
+.answer-inner {
+  color: #4a5568;
+}
+
+/* 리스트 및 상세 스타일 */
+.answer-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.answer-check-list li {
+  margin-bottom: 15px;
+}
+
+.sub-bullet-list {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.notice-text {
+  color: #718096;
+  margin-top: 20px;
+}
+
+/* --- 활성화 상태 (Active) --- */
+.faq-item--active {
+  border-color: #48bb78; /* 활성 상태 테두리 강조 */
+}
+
+.faq-item--active .question-text {
+  color: #2f855a; /* alyak green */
+}
+
+/* "더 많은 질문 보기" 버튼 */
+.btn-text {
+  position: absolute;
+  top: 48px;
+  right: 0; /* 우측 끝으로 밀착 */
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #1b4137;
+  text-decoration: none;
+}
+/* //faq section css */
 
 /* 컨텐츠5 - 최호찬 */
 /* employment section css  */

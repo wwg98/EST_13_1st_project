@@ -561,7 +561,7 @@ section {
   gap: 48px; /* 피그마의 Gap과 동일 (요소 사이 간격) */
 }
 
-.section-benefits .section-title-area {
+.section-benefits .container .section-title-area {
   text-align: center;
   color: #012b22;
 }
@@ -751,6 +751,165 @@ section {
   background-color: #e66000;
 }
 /* benefits section css */
+/* recruitment section css */
+.section-recruitment .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.section-recruitment .container .section-title-area {
+  text-align: center;
+  color: #012b22;
+}
+
+.section-recruitment .section-subtitle {
+  color: #3dd37b; /* light green */
+  text-align: center;
+}
+
+/* 모집 보드 (좌측 메뉴 + 우측 컨텐츠) */
+.recruitment-board {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto;
+
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden; /* 배경색이 넘치지 않게 */
+  background-color: #fff;
+}
+
+.menu-item {
+  grid-column: 1;
+  background-color: #1d352f;
+  padding: 40px 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.menu-item:nth-child(1) {
+  grid-row: 1;
+}
+
+.menu-item:nth-child(2) {
+  grid-row: 2;
+}
+
+.menu-item:nth-child(3) {
+  grid-row: 3;
+}
+
+.menu-title {
+  color: #fff;
+}
+.menu-desc {
+  color: #85ada0;
+}
+
+.content-header,
+.recruitment-check-list,
+.process-steps {
+  grid-column: 2/4;
+  padding: 32px;
+  background: #fff;
+}
+
+/* 컨텐츠 상단 (뱃지, 날짜, D-day) */
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 양 끝 정렬 */
+  padding-bottom: 32px;
+}
+.badge--gray {
+  background-color: #e2e3e0;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.d-day-text {
+  color: #ff6b00; /* 오렌지색 강조 */
+}
+
+/* 체크리스트 */
+.recruitment-check-list {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  list-style: none;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-check {
+  color: #2ecc71; /* 체크 아이콘 색상 */
+}
+
+.process-steps {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.step {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.step-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4px;
+  padding: 24px 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 최종 합격 박스 강조 */
+.step--final .step-box {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  width: 24px;
+
+  right: -29px;
+  top: 50%;
+  transform: translateY(-50%); /* 자신의 높이를 기준으로 수직 중앙 정렬 */
+
+  z-index: 1;
+
+  color: #adb5bd;
+  font-size: 24px;
+}
+/* recruitment section css */
 
 /* 컨텐츠5 - 최호찬 */
 /* employment section css  */

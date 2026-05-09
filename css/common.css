@@ -110,9 +110,23 @@
 }
 
 /* 레이아웃 */
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  color: var(--black);
+}
+
+.section {
+  padding: calc(var(--base-unit) * 3) 0;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip-path: inset(50%);
 }
 
 /* 링크 버튼 */

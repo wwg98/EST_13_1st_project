@@ -561,7 +561,7 @@ section {
   gap: 48px; /* 피그마의 Gap과 동일 (요소 사이 간격) */
 }
 
-.section-benefits .section-title-area {
+.section-benefits .container .section-title-area {
   text-align: center;
   color: #012b22;
 }
@@ -755,10 +755,16 @@ section {
 .section-recruitment .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
 }
 
-.section-subtitle {
+.section-recruitment .container .section-title-area {
+  text-align: center;
+  color: #012b22;
+}
+
+.section-recruitment .section-subtitle {
   color: #3dd37b; /* light green */
   text-align: center;
 }

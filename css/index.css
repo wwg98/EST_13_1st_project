@@ -2,8 +2,7 @@
 /* 컨텐츠2 - 맹예진 */
 
 section {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 72px 0;
 }
 
 .features-box {
@@ -32,15 +31,14 @@ section {
 .section-company h2 {
   margin-bottom: 24px;
 }
-
+.section-company ul {
+  margin: 48px 0;
+}
 .company-introduction li {
   width: 282px;
-  height: 180px;
   background: var(--light-green);
   border-radius: 10px;
   padding: 18px 0;
-  margin-top: 48px;
-  margin-bottom: 48px;
 }
 
 /* 차별점 */
@@ -48,27 +46,22 @@ section {
 .section-compare {
   height: 600px;
 }
-.section-compare > div:first-child {
-  position: relative;
-}
 .section-compare .orange {
   margin-bottom: 24px;
 }
-.compare-box > div {
-  position: absolute;
-  left: 459px;
-  top: 117px;
+.section-compare .left {
+  width: 458px;
 }
-.compare-box > div:first-child {
-  display: flex;
-  align-items: flex-end;
-  gap: 0;
+.compare-box {
+  width: 665px;
+  margin-top: 48px;
 }
 .compare-target {
   background: #d9d9d9;
   width: 281px;
   height: 48px;
   border-radius: 20px 20px 0 0;
+  margin-top: 48px;
 }
 .compare-est {
   background: var(--orange);
@@ -80,9 +73,7 @@ section {
 .compare-list {
   width: 665px;
   margin-top: 24px;
-  position: absolute;
-  left: 739px;
-  top: 214px;
+  margin-left: 281px;
 }
 .compare-text {
   display: flex;

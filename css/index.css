@@ -319,6 +319,10 @@ section {
 .section-curriculum > div {
   gap: calc(var(--base-unit) * 2);
 }
+.section-lecture,
+.section-curriculum {
+  padding: calc(var(--base-unit) * 3) 15px;
+}
 
 /* 수강 후기 부분 */
 .testimonial-list {
@@ -429,6 +433,92 @@ section {
   border-radius: 9999px;
   padding: 4px 12px;
 }
+.curriculum-table {
+  width: 1136px;
+  padding: 40px 40px;
+  gap: calc(var(--base-unit) * 2);
+  box-sizing: border-box;
+}
+
+.curriculum-table-heading-text {
+  gap: var(--base-font);
+}
+
+.curriculum-table-heading {
+  gap: calc(var(--base-unit) * 0.5);
+}
+
+.content-left-overlay {
+  color: var(--background-grey);
+  width: calc(var(--base-unit) * 2);
+  height: calc(var(--base-unit) * 2);
+}
+
+.table-body-content-left {
+  width: calc(var(--base-unit) * 14);
+  gap: 16px;
+}
+
+.table-body-content-left li {
+  display: flex;
+  align-items: center;
+  gap: var(--base-unit);
+  padding: var(--base-font);
+}
+
+.table-body-content-left li .material-icons {
+  margin-left: auto;
+}
+
+.content-left-text p:last-child {
+  padding-top: 4px;
+}
+
+.content-right-overlay {
+  width: 120px;
+  color: var(--white);
+  background: var(--light-green);
+  border-radius: 6px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+.table-body-content-right {
+  gap: 32px;
+}
+
+.table-body-content-right-top {
+  gap: var(--base-font);
+}
+.table-body-content-right-bottom {
+  gap: var(--base-unit);
+  padding-top: 32px;
+  box-sizing: border-box;
+}
+.table-body-content-right-bottom-top {
+  gap: calc(var(--base-font) * 0.5);
+}
+
+.table-body-content-right-bigicon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-body-content-right-bottom-content-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--base-unit);
+  box-sizing: border-box;
+}
+
+.table-body-content-right-bottom-content-list li > p {
+  padding-top: 4px;
+}
 
 .curriculum-bh32 {
   height: 32px;
@@ -440,6 +530,10 @@ section {
 
 .light-green {
   color: var(--light-green);
+}
+
+.background-grey {
+  color: var(--background-grey);
 }
 
 /* 컨텐츠4 - 주성문 */

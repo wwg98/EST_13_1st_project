@@ -804,6 +804,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--white);
 }
 
 .table-body-content-right-bottom-content-list li {

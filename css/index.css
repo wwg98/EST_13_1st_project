@@ -716,8 +716,6 @@ section {
   gap: 12px;
 }
 .curriculum-table-body {
-  border: 1px solid var(--grey-green);
-  border-radius: 12px;
   background: var(--white);
 }
 
@@ -802,6 +800,7 @@ section {
   background: var(--white);
   border-radius: 12px;
   padding: calc(var(--base-unit) / 2);
+  border: 1px solid var(--grey-green);
 }
 
 .table-body-content-right-top {

@@ -669,8 +669,9 @@ section {
   gap: 8px;
 
   background: var(--white);
-  border: 1px solid var(--white);
+  border: 1px solid var(--grey-green);
   border-radius: 12px;
+  box-shadow: 0 4px 6px var(--light-grey);
 
   padding: var(--base-unit) var(--base-unit) 52px var(--base-unit);
   box-sizing: border-box;
@@ -713,6 +714,11 @@ section {
 
 .curriculum-table-heading {
   gap: 12px;
+}
+.curriculum-table-body {
+  border: 1px solid var(--grey-green);
+  border-radius: 12px;
+  background: var(--white);
 }
 
 .content-left-overlay {
@@ -761,10 +767,12 @@ section {
   display: flex;
   align-items: center;
   width: 100%;
+  height: calc(var(--base-unit) * 5);
   gap: var(--base-unit);
   padding: var(--base-font);
   box-sizing: border-box;
-  border: 2px solid transparent;
+  border: 2px solid var(--grey-green);
+  border-radius: 12px;
 }
 
 .table-body-content-left li .material-icons {
@@ -791,6 +799,9 @@ section {
 }
 .table-body-content-right {
   gap: 32px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: calc(var(--base-unit) / 2);
 }
 
 .table-body-content-right-top {

@@ -458,6 +458,28 @@ section {
   width: calc(var(--base-unit) * 14);
   gap: 16px;
 }
+.table-body-content-left li.active {
+  background-color: var(--grey-green);
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.table-body-content-left li.active .content-left-overlay {
+  display: flex;
+  flex-direction: column;
+  background: var(--light-green);
+  border-radius: 9999px;
+  color: var(--white);
+}
+
+.table-body-content-left li.active .content-left-text p:first-child {
+  color: var(--light-green);
+}
+
+.table-body-content-left li.active .material-icons {
+  color: var(--light-green);
+}
 
 .table-body-content-left li {
   display: flex;
@@ -518,6 +540,21 @@ section {
 
 .table-body-content-right-bottom-content-list li > p {
   padding-top: 4px;
+}
+
+.table-body-content-right-text {
+  width: 170px;
+}
+
+.table-body-content-right-bottom-mid {
+  gap: var(--base-font);
+  padding-bottom: calc(var(--base-font) * 0.5);
+}
+
+.table-body-content-right-foot {
+  padding: calc(var(--base-unit) * 2 / 3);
+  background: var(--grey-green);
+  border-radius: 12px;
 }
 
 .curriculum-bh32 {

@@ -699,11 +699,20 @@ section {
 }
 
 .curriculum-table-heading-text {
-  gap: var(--base-font);
+  gap: 16px;
+}
+
+.curriculum-table-heading-text p,
+.curriculum-table-heading-text h3 {
+  margin: 0;
+}
+
+.curriculum-table-heading-text p {
+  white-space: nowrap;
 }
 
 .curriculum-table-heading {
-  gap: calc(var(--base-unit) * 0.5);
+  gap: 12px;
 }
 
 .content-left-overlay {

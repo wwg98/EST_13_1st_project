@@ -289,7 +289,7 @@ body {
 .course-info-section {
   max-width: 1200px; /* 배너보다 조금 좁은 너비로 중앙 정렬 */
   margin: 80px auto;
-  padding: 0 px;
+  padding: 0;
 }
 
 /* 1. 상단: 썸네일 + 정보 박스 영역 */
@@ -980,7 +980,6 @@ section {
   background-color: white;
   color: #545f72;
   align-items: flex-start;
-  gap: auto;
 }
 
 .benefit-card--large .benefit-content {
@@ -1035,7 +1034,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: auto;
   background-color: #1d352f; /* 딥그린 배경 */
   color: #fff;
 }

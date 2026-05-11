@@ -93,23 +93,15 @@
 - **Image Handling**: next/image
 - **State Management**: useState, useEffect, SWR 또는 React Query 선택 가능
 
-#### Backend (BaaS)
-
-- **Database**: Supabase(PostgreSQL)
-- **Auth**: Supabase Auth
-- **Storage**: Supabase Storage
-- **Edge Functions**: 이미지 처리, 폼 제출, 외부 API 프록시
-
 #### Tools
 
 - **Version Control**: Git & GitHub
-- **Deployment**: Vercel
-- **CI/CD**: GitHub Actions (테스트 및 배포 자동화)
+
 - **Design**: Figma
 
 ### 2.2 배포 URL
 
-- **Production**: https://portfolio-nextjs-supabase-tau.vercel.app/
+- **Production**: https://xoxoworld.github.io/EST_fe_13_1st_project/
 
 ### 2.3 📚 개발 컨벤션 가이드
 
@@ -139,74 +131,73 @@
 
 ## 4. 데이터 흐름
 
-```mermaid
-sequenceDiagram
-    actor Admin as 관리자
-    participant FE as Next.js Frontend
-    participant SB as Supabase
-
-    Admin->>+FE: 로그인 정보 입력
-    FE->>+SB: Auth 요청
-    SB-->>FE: 토큰 + 사용자 정보
-    FE->>FE: 쿠키/상태 저장
-    Admin->>+FE: 새 프로젝트 등록 요청
-    FE->>+SB: DB Insert + 이미지 업로드(Storage)
-    SB-->>FE: 성공 응답
-    FE->>Admin: 목록 페이지로 리다이렉트
 ```
 
 ## 5. 프로젝트 구조
 
 ```
+
 portfolio-nextjs_supabase/
 ├─ public/
 ├─ src/
-│  ├─ app/                    # Next.js App Router
-│  │  ├─ layout.(js|tsx)
-│  │  ├─ page.(js|tsx)
-│  │  └─ ...                  # route segments
-│  ├─ components/             # 재사용 컴포넌트
-│  ├─ lib/                    # Supabase 클라이언트 등
-│  │  └─ supabase/client.(js|ts)
-│  ├─ styles/                 # 전역/모듈 스타일
-│  └─ utils/                  # 유틸 함수
-├─ .env.example               # 환경변수 예시
+│ ├─ app/ # Next.js App Router
+│ │ ├─ layout.(js|tsx)
+│ │ ├─ page.(js|tsx)
+│ │ └─ ... # route segments
+│ ├─ components/ # 재사용 컴포넌트
+│ ├─ lib/ # Supabase 클라이언트 등
+│ │ └─ supabase/client.(js|ts)
+│ ├─ styles/ # 전역/모듈 스타일
+│ └─ utils/ # 유틸 함수
+├─ .env.example # 환경변수 예시
 ├─ next.config.mjs
 ├─ package.json
 └─ README.md
 
 ## 7. 향후 개선 사항
- - 프로젝트 검색/필터링 UI
- - 이미지 업로드 시 썸네일 자동 생성
- - Contact 폼 → Edge Function 메일 발송
- - E2E 테스트(Cypress) 및 배포 자동화
- - Lighthouse 성능/SEO 90점 이상 달성
+
+- 프로젝트 검색/필터링 UI
+- 이미지 업로드 시 썸네일 자동 생성
+- Contact 폼 → Edge Function 메일 발송
+- E2E 테스트(Cypress) 및 배포 자동화
+- Lighthouse 성능/SEO 90점 이상 달성
 
 ## 8. 실행 방법
+
 ### 1. 클론
-```
-
-git clone https://github.com/alikerock/portfolio-nextjs_supabase.git
-cd portfolio-nextjs_supabase
 
 ```
+
+git clone https://github.com/xoxoworld/EST_fe_13_1st_project
+
+
+```
+
 ## 10. 제작 후기
+
 이 프로젝트를 통해 Next.js App Router와 Supabase를 결합하여
 전체 CRUD 흐름과 배포까지 경험하였으며,
 실무에 가까운 BaaS 활용법, 권한 제어, 성능 최적화 과정을 학습하였습니다.
 
 ## 11. 기획/디자인 문서
+
 - **기획서(피그마 슬라이드)**: 사용자 여정, 화면 흐름, 요구사항, 마일스톤 정리
   링크: https://www.figma.com/file/XXXX
 - **디자인 원본(피그마)**: 컴포넌트, 컬러/타이포 스케일, 반응형 레이아웃, 아이콘
   링크: https://www.figma.com/file/YYYY
 
 ### 11.1 미리보기
+
 <!-- /public/readme/ 폴더에 썸네일 PNG를 넣고 경로를 맞춘다 -->
+
 [![기획서 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/XXXX "피그마 슬라이드로 이동")
 [![디자인 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/YYYY "피그마 디자인으로 이동")
 
 ### 11.2 버전 메모
+
 - v1.0(2025-08-12): 핵심 화면/플로우 확정
 - v1.1(2025-08-15): 모바일 브레이크포인트/컴포넌트 토큰 보강
+
+```
+
 ```

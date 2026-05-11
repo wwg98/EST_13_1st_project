@@ -573,6 +573,7 @@ section {
 
 /* 컨텐츠3 - 장진혁 */
 .section-testimonial > div,
+.section-instructors > div,
 .section-lecture > div,
 .section-curriculum > div {
   gap: calc(var(--base-unit) * 2);
@@ -624,6 +625,44 @@ section {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+/*강사진 부분  */
+.section-instructors {
+  background: var(--deep-green);
+}
+
+.instructors-card {
+  width: 390px;
+  height: 380px;
+  gap: 10px;
+}
+
+.instructors-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.personal-history :nth-child(1) {
+  font-family: var(--font-body);
+  font-weight: 500; /* Medium */
+  font-size: 20px;
+  line-height: 1.2; /* 24/20 */
+}
+.personal-history :nth-child(2) {
+  flex: 1px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.instructors-text {
+  width: 1200px;
+  padding-left: 78px;
 }
 
 /* 수강 종류 부분 */

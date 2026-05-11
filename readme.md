@@ -19,13 +19,13 @@
 
 ### 1.2 👥 팀원
 
-| 이름   | 역할                                  | 주요 담당                                                                                                                                                           | GitHub                                        | 연락                        |
-| ------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------- |
-| 최호찬 | 팀장,기획,발표,구현                   | 현황분석(웹표준&웹접근성) <br>벤치마킹 (트렌드)<br>section employment/section navigation. Section - Visual References for visual interest, Footer (Shared Component | [@alikerock](https://github.com/alikerock)    | (예) starhochan70@gmail.com |
-| 이성희 | 팀원,기획, 디자인, 구현, GIt 담당     | 현황분석(반응형)<br>벤치마킹(반응형 웹)<br>HERO section, HERO Mega Menu section, Frontend section                                                                   | [@xoxoworld](https://github.com/xoxoworld)    | sung021125@gmail.com        |
-| 맹예진 | 팀원, 기획, 디자인, 구현, 회의록 작성 | 현황분석(경제성)<br>벤치마킹 (비주얼)<br>Section features, Section company, Section differentiation, Section job status, Section portfolio                          | [@jiwoo-park](https://github.com/jiwoo-park)  | rkskek8484@gmail.com        |
-| 장진혁 | 팀원,기획, 디자인, 구현, 회의록 작성  | 현황분석(심미성 독창성 ) <br>벤치마킹(UX/UI)<br>Section testimonial, Section lecture, Section Curriculum, Section instructors                                       | [@wwg98](https://github.com/jiwoo-park)       | wwwg98@gmail.com            |
-| 주성문 | 팀원, 기획, 디자인, 구현, 피그마 담당 | 현황분석(합목적성)<br>벤치마킹(내용)<br>Student Benefits Section, Section - Recruitment Overview, Section - FAQ                                                     | [@KimShueBang](https://github.com/jiwoo-park) | enforhssh@gmail.com         |
+| 이름   | 역할                                  | 주요 담당                                                                                                                                                           | GitHub                                            | 연락                        |
+| ------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | --------------------------- |
+| 최호찬 | 팀장,기획,발표,구현                   | 현황분석(웹표준&웹접근성) <br>벤치마킹 (트렌드)<br>section employment/section navigation. Section - Visual References for visual interest, Footer (Shared Component | [@alikerock](https://github.com/alikerock)        | (예) starhochan70@gmail.com |
+| 이성희 | 팀원,기획, 디자인, 구현, GIt 담당     | 현황분석(반응형)<br>벤치마킹(반응형 웹)<br>HERO section, HERO Mega Menu section, Frontend section                                                                   | [@xoxoworld](https://github.com/xoxoworld)        | sung021125@gmail.com        |
+| 맹예진 | 팀원, 기획, 디자인, 구현, 회의록 작성 | 현황분석(경제성)<br>벤치마킹 (비주얼)<br>Section features, Section company, Section differentiation, Section job status, Section portfolio                          | [@rkskek8484-cell](https://github.com/jiwoo-park) | rkskek8484@gmail.com        |
+| 장진혁 | 팀원,기획, 디자인, 구현, 회의록 작성  | 현황분석(심미성 독창성 ) <br>벤치마킹(UX/UI)<br>Section testimonial, Section lecture, Section Curriculum, Section instructors                                       | [@wwg98](https://github.com/jiwoo-park)           | wwwg98@gmail.com            |
+| 주성문 | 팀원, 기획, 디자인, 구현, 피그마 담당 | 현황분석(합목적성)<br>벤치마킹(내용)<br>Student Benefits Section, Section - Recruitment Overview, Section - FAQ                                                     | [@KimShueBang](https://github.com/jiwoo-park)     | enforhssh@gmail.com         |
 
 ### 1.3 🗓️ 마일스톤
 
@@ -57,6 +57,7 @@
 - [ ] 버튼·폼·이미지 등 세부 요소 스타일링
 
 #### 14일차 — 검사, 배포준비
+
 - [ ] 웹표준 & 웹접근성 검사 및 수정
 - [ ] Figma와 디자인 비교·오차 수정
 - [ ] 코드 정리 및 주석 작성
@@ -92,7 +93,7 @@ gantt
 
     section 기획, 설계
     현항분석                :done, a1, 2026-04-28, 2d
-    벤치마킹, 리뉴얼안       :done, a2, 2026-04-29, 1d 
+    벤치마킹, 리뉴얼안       :done, a2, 2026-04-29, 1d
 
     section figma 디자인
     figma 와이어 프레임      :b1, 2026-04-30, 1d
@@ -193,7 +194,7 @@ git clone https://github.com/xoxoworld/EST_fe_13_1st_project
 
 이 프로젝트에서는 피그마를 활용해 전체 UI를 직접 디자인한 뒤, HTML과 CSS만으로 웹페이지를 구현해보는 경험을 했습니다.
 반복되는 콘텐츠를 공통 스타일로 관리하고, Flex와 Grid를 활용해 정렬과 반응형 구조를 구현하면서 퍼블리싱의 중요성을 많이 배울 수 있었습니다.
-마지막으로 팀워크로 코드를 구현하고 배포까지 협업의 중요성을 느낄 수 있었던 경험이었습니다. 
+마지막으로 팀워크로 코드를 구현하고 배포까지 협업의 중요성을 느낄 수 있었던 경험이었습니다.
 또한 디자인과 실제 구현 사이의 차이를 직접 경험하며 웹 개발 과정에 대한 이해도를 높일 수 있었던 프로젝트였습니다.
 
 ## 7. 기획/디자인 문서
@@ -209,7 +210,6 @@ git clone https://github.com/xoxoworld/EST_fe_13_1st_project
 
 [![기획서 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/XXXX "피그마 슬라이드로 이동")
 [![디자인 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/YYYY "피그마 디자인으로 이동")
-
 
 ```
 

@@ -1534,12 +1534,12 @@ aside .menu-info:hover {
   height: auto;
   padding: calc(var(--base-unit) * 3) 0;
   background: var(--deep-green);
-  color: white;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 .section-employment .container {
+  color: var(--white);
   position: relative;
 }
 .text-orange {
@@ -1561,9 +1561,7 @@ aside .menu-info:hover {
 }
 .q-employment,
 .a-employment {
-  display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 .section-employment .container {
   position: relative;
@@ -1573,14 +1571,29 @@ aside .menu-info:hover {
   height: 60px;
   background: var(--light-green);
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 235px;
 }
+/* navigation section css */
+.section-navigation {
+  width: 100%;
+  height: auto;
+  background: var(--background-grey);
+}
+.section-navigation .container {
+  height: 48px;
+  color: var(--white);
+  padding: 0 auto;
+}
+.section-navigation .container ul {
+  gap: 50px;
+}
+.section-navigation .container a:hover {
+  color: var(--light-green);
+}
+
 /* visual section css */
 .section-visual {
   width: 100%;
@@ -1591,9 +1604,7 @@ aside .menu-info:hover {
   margin: 0 auto;
   border: solid 1px var(--grey-green);
   border-radius: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: calc(var(--base-unit) * 3) 10px;
 }
 .figure-visual {
   flex: 0 0 580px;
@@ -1619,13 +1630,9 @@ aside .menu-info:hover {
   word-break: keep-all;
 }
 .visual-status {
-  display: flex;
-  align-items: center;
   gap: 16px;
 }
 .visual-status-text {
-  display: flex;
-  flex-direction: column;
   gap: 4px;
 }
 
@@ -1656,9 +1663,6 @@ aside .menu-info:hover {
 .avatar-group li.visual-count {
   background: #1b4123;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .status-text strong {
@@ -1676,8 +1680,6 @@ footer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: calc(var(--base-font) * 3);
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end;
 }
 .footer-nav {
@@ -1686,7 +1688,6 @@ footer .container {
   gap: 30px;
 }
 .social-icons {
-  display: flex;
   gap: var(--base-font);
   margin-bottom: 32px;
   justify-content: flex-end;

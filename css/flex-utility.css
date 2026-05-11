@@ -18,12 +18,20 @@
   align-items: center;
 }
 
+.align-items-stretch {
+  align-items: stretch;
+}
+
 .g-1 {
   gap: var(--base-unit);
 }
 
 .g-2 {
   gap: calc(var(--base-unit) * 2);
+}
+
+.g-harf {
+  gap: calc(var(--base-unit) / 2);
 }
 
 .text-center {

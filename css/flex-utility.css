@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.align-items-stretch {
+  align-items: stretch;
+}
+
 .g-1 {
   gap: var(--base-unit);
 }

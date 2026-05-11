@@ -18,7 +18,7 @@ body {
 }
 /* 헤더에 마우스를 올리면 배경색이 짙은 네이비로 변경 */
 .header:hover {
-  background-color: #232e3f;
+  background-color: #1e2532;
 }
 
 /* --- 서브메뉴와 열을 맞추기 위해 gap과 너비 고정 --- */
@@ -170,13 +170,12 @@ body {
   position: relative;
   max-width: 1200px; /* 최대 너비 1200px 제한 */
   margin: 50px auto 0;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
   width: 100%;
-  margin-top: 50px;
 }
 
 /* --- 왼쪽 텍스트 콘텐츠 --- */
@@ -288,8 +287,8 @@ body {
 ========================================= */
 .course-info-section {
   max-width: 1200px; /* 배너보다 조금 좁은 너비로 중앙 정렬 */
-  margin: 80px auto;
-  padding: 0 px;
+  margin: 72px auto;
+  padding: 0;
 }
 
 /* 1. 상단: 썸네일 + 정보 박스 영역 */

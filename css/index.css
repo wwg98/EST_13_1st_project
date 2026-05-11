@@ -13,10 +13,123 @@ body {
   width: 100%;
   padding: 30px 0;
   z-index: 100;
+  /* 마우스 오버 시 배경색 변환 애니메이션 */
+  transition: background-color 0.4s ease;
+}
+/* 헤더에 마우스를 올리면 배경색이 짙은 네이비로 변경 */
+.header:hover {
+  background-color: #232e3f;
+}
+
+/* --- 서브메뉴와 열을 맞추기 위해 gap과 너비 고정 --- */
+.global-nav ul {
+  display: flex;
+  gap: 100px; /* 기존 100px에서 조금 줄임 */
+}
+
+.global-nav li {
+  width: 180px; /* 서브메뉴와 위아래 중앙 정렬을 맞추기 위한 고정 너비 */
+  text-align: center;
+}
+
+.global-nav a {
+  color: #a1a1aa;
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.global-nav a:hover {
+  color: #ffffff;
+}
+
+/* =========================================
+   2. 메가 메뉴 (슬라이드 다운) 스타일
+========================================= */
+.mega-menu {
+  position: absolute;
+  top: 100%; /* 헤더의 바로 아래에 위치 */
+  left: 0;
+  width: 100%;
+  background-color: #232e3f;
+  border-top: 2px solid rgba(255, 255, 255, 0.05); /* 은은한 구분선 */
+
+  /* 숨김 처리 및 슬라이드 다운 애니메이션 준비 */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 헤더 영역에 마우스를 올리면 메가메뉴 펼쳐짐 */
+.header:hover .mega-menu {
+  max-height: 500px; /* 콘텐츠가 들어갈 충분한 높이 */
+  opacity: 1;
+  visibility: visible;
+  padding: 40px 0 50px 0;
+}
+
+.mega-menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --- 왼쪽 콘텐츠 (이미지 + 텍스트) --- */
+.mega-left {
+  width: 350px; /* 이미지 영역 너비 */
+}
+
+.mega-news-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.mega-left p {
+  color: #3dd37b; /* 포인트 그린 색상 */
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+/* --- 오른쪽 콘텐츠 (서브 메뉴) --- */
+.mega-right {
+  display: flex;
+  gap: 100px; /* 메인 메뉴(.global-nav ul)의 gap과 동일하게 설정 */
+}
+
+.sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 180px; /* 메인 메뉴(.global-nav li)의 너비와 동일하게 설정 */
+  align-items: center; /* 메인 메뉴 텍스트 기준 가운데 정렬 */
+}
+
+.sub-list a {
+  color: #a1a1aa;
+  font-size: 28px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.sub-list a:hover {
+  color: #ffffff; /* 마우스 오버 시 흰색 강조 */
 }
 
 .header-container {
-  padding: 0 px;
+  max-width: 1200px; /* 최대 너비 1200px 제한 */
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +158,6 @@ body {
 /* 2. 메인 배너 영역 */
 .hero-banner {
   position: relative;
-  min-height: 70vh; /* 화면 전체 높이 사용 */
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -56,7 +168,9 @@ body {
 }
 .banner-container {
   position: relative;
-  padding: 0px;
+  max-width: 1200px; /* 최대 너비 1200px 제한 */
+  margin: 50px auto 0;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,14 +192,14 @@ body {
   margin-bottom: 20px;
 }
 
-.main-title {
+.title-xl {
   font-size: 72px;
   line-height: 125%;
   margin-bottom: 50px;
   word-break: keep-all; /* 단어 단위로 줄바꿈 */
 }
 
-.main-title .highlight {
+.title-xl .highlight {
   color: #fe7102; /* 오렌지색 하이라이트 */
 }
 
@@ -291,23 +405,11 @@ body {
   opacity: 90%;
   font-size: 20px;
 }
-/* 반응형 처리 (모바일 화면) */
-@media (max-width: 768px) {
-  .course-summary-wrap {
-    flex-direction: column; /* 세로 배치 */
-  }
-  .course-thumbnail {
-    width: 100%;
-  }
-  .course-details-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2칸으로 변경 */
-  }
-}
+
 /* 컨텐츠2 - 맹예진 */
 
 section {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 72px 0;
 }
 
 .features-box {
@@ -340,14 +442,14 @@ section {
 .section-company h2 {
   margin-bottom: 24px;
 }
+.section-company ul {
+  margin: 48px 0;
+}
 .company-introduction li {
   width: 282px;
-  height: 180px;
   background: var(--light-green);
   border-radius: 10px;
   padding: 18px 0;
-  margin-top: 48px;
-  margin-bottom: 48px;
 }
 
 /* 차별점 */
@@ -355,27 +457,22 @@ section {
 .section-compare {
   height: 600px;
 }
-.section-compare > div:first-child {
-  position: relative;
-}
 .section-compare .orange {
   margin-bottom: 24px;
 }
-.compare-box > div {
-  position: absolute;
-  left: 459px;
-  top: 117px;
+.section-compare .left {
+  width: 458px;
 }
-.compare-box > div:first-child {
-  display: flex;
-  align-items: flex-end;
-  gap: 0;
+.compare-box {
+  width: 665px;
+  margin-top: 48px;
 }
 .compare-target {
   background: #d9d9d9;
   width: 281px;
   height: 48px;
   border-radius: 20px 20px 0 0;
+  margin-top: 48px;
 }
 .compare-est {
   background: var(--orange);
@@ -387,9 +484,7 @@ section {
 .compare-list {
   width: 665px;
   margin-top: 24px;
-  position: absolute;
-  left: 739px;
-  top: 214px;
+  margin-left: 281px;
 }
 .compare-text {
   display: flex;
@@ -435,6 +530,9 @@ section {
 .section-portfolio {
   background: var(--deep-green);
 }
+.section-portfolio > div {
+  color: var(--white);
+}
 .section-portfolio h2 {
   margin-bottom: var(--base-unit);
 }
@@ -459,6 +557,13 @@ section {
 }
 /* 한 영역 안에서 이미지가 계속 바뀌는 효과는 순수 CSS로는 구현이 어려워 js 학습 후 진행 */
 
+.section-instructors {
+  background: var(--deep-green);
+}
+.section-instructors > div {
+  color: var(--white);
+}
+
 .orange {
   color: var(--orange);
 }
@@ -471,6 +576,10 @@ section {
 .section-lecture > div,
 .section-curriculum > div {
   gap: calc(var(--base-unit) * 2);
+}
+.section-lecture,
+.section-curriculum {
+  padding: calc(var(--base-unit) * 3) 15px;
 }
 
 /* 수강 후기 부분 */
@@ -501,7 +610,7 @@ section {
   gap: calc(var(--base-unit) * 2);
   padding: calc(var(--base-unit) * 2) var(--base-unit);
   width: 375px;
-  height: 528px;
+  height: calc(var(--base-unit) * 22);
 
   text-align: center;
   flex-shrink: 0;
@@ -515,10 +624,6 @@ section {
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.orange {
-  color: var(--orange);
 }
 
 /* 수강 종류 부분 */
@@ -550,8 +655,226 @@ section {
   gap: 32px;
 }
 
+/* 커리큘럼 부분 */
+.curriculum-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+  overflow: visible;
+}
+.curriculum-list li {
+  width: 272px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background: var(--white);
+  border: 1px solid var(--grey-green);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--light-grey);
+
+  padding: var(--base-unit) var(--base-unit) 52px var(--base-unit);
+  box-sizing: border-box;
+}
+
+.curriculum-list li > p {
+  color: var(--background-grey);
+  padding: 0 4px 0 0;
+}
+
+.curriculum-list li > span.material-icons {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.curriculum-overlay {
+  background: var(--background-grey);
+  border-radius: 9999px;
+  padding: 4px 12px;
+}
+.curriculum-table {
+  width: 1136px;
+  padding: 40px 40px;
+  gap: calc(var(--base-unit) * 2);
+  box-sizing: border-box;
+}
+
+.curriculum-table-heading-text {
+  gap: 16px;
+}
+
+.curriculum-table-heading-text p,
+.curriculum-table-heading-text h3 {
+  margin: 0;
+}
+
+.curriculum-table-heading-text p {
+  white-space: nowrap;
+}
+
+.curriculum-table-heading {
+  gap: 12px;
+}
+.curriculum-table-body {
+  background: var(--white);
+}
+
+.content-left-overlay {
+  color: var(--background-grey);
+  width: calc(var(--base-unit) * 2);
+  height: calc(var(--base-unit) * 2);
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-left-overlay p {
+  width: calc(var(--base-unit) * 2);
+  height: calc(var(--base-unit) * 2);
+  text-align: center;
+}
+
+.table-body-content-left {
+  width: calc(var(--base-unit) * 14);
+  gap: 16px;
+}
+
+.table-body-content-left li.active {
+  background-color: var(--grey-green);
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.table-body-content-left li.active .content-left-overlay {
+  background: var(--light-green);
+  color: var(--white);
+}
+
+.table-body-content-left li.active .content-left-text p:first-child {
+  color: var(--light-green);
+}
+
+.table-body-content-left li.active .material-icons {
+  color: var(--light-green);
+}
+
+.table-body-content-left li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(var(--base-unit) * 5);
+  gap: var(--base-unit);
+  padding: var(--base-font);
+  box-sizing: border-box;
+  border: 2px solid var(--grey-green);
+  border-radius: 12px;
+}
+
+.table-body-content-left li .material-icons {
+  margin-left: auto;
+}
+.content-left-text {
+  width: 200px;
+}
+
+.content-left-text p:last-child {
+  padding-top: 4px;
+}
+.table-body-content-left li .content-left-text {
+  flex-grow: 1;
+}
+
+.content-right-overlay {
+  width: 120px;
+  color: var(--white);
+  background: var(--light-green);
+  border-radius: 6px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+.table-body-content-right {
+  gap: 32px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: calc(var(--base-unit) / 2);
+  border: 1px solid var(--grey-green);
+}
+
+.table-body-content-right-top {
+  gap: var(--base-font);
+}
+.table-body-content-right-bottom {
+  gap: var(--base-unit);
+  padding-top: 32px;
+  box-sizing: border-box;
+}
+.table-body-content-right-bottom-top {
+  gap: calc(var(--base-font) * 0.5);
+}
+
+.table-body-content-right-bigicon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.table-body-content-right-bottom-content-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--base-unit);
+  box-sizing: border-box;
+}
+
+.table-body-content-right-bottom-content-list li > p {
+  padding-top: 4px;
+}
+
+.table-body-content-right-text {
+  width: 170px;
+}
+
+.table-body-content-right-bottom-mid {
+  gap: var(--base-font);
+  padding-bottom: calc(var(--base-font) * 0.5);
+}
+
+.table-body-content-right-foot {
+  padding: calc(var(--base-unit) * 2 / 3);
+  background: var(--grey-green);
+  border-radius: 12px;
+}
+
+.curriculum-bh32 {
+  height: 32px;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.light-green {
+  color: var(--light-green);
+}
+
+.background-grey {
+  color: var(--background-grey);
+}
+
 /* 컨텐츠4 - 주성문 */
-/* 수강혜택 섹션 */
+/* Section Base */
 .section-benefits .container {
   display: flex;
   flex-direction: column;
@@ -559,7 +882,7 @@ section {
   gap: 48px; /* 피그마의 Gap과 동일 (요소 사이 간격) */
 }
 
-.section-title-area {
+.section-benefits .container .section-title-area {
   text-align: center;
   color: #012b22;
 }
@@ -753,10 +1076,16 @@ section {
 .section-recruitment .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
 }
 
-.section-subtitle {
+.section-recruitment .container .section-title-area {
+  text-align: center;
+  color: #012b22;
+}
+
+.section-recruitment .section-subtitle {
   color: #3dd37b; /* light green */
   text-align: center;
 }
@@ -773,20 +1102,8 @@ section {
   background-color: #fff;
 }
 
-.recruitment-nav {
-  background-color: #1d352f;
-  padding: 40px 32px;
-}
-
-.recruitment-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  list-style: none;
-  padding: 0;
-}
-
 .menu-item {
+  grid-column: 1;
   background-color: #1d352f;
   padding: 40px 32px;
 
@@ -794,24 +1111,18 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  /* 행 구분선*/
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .menu-item:nth-child(1) {
-  grid-column: 1;
   grid-row: 1;
 }
 
 .menu-item:nth-child(2) {
-  grid-column: 1;
   grid-row: 2;
 }
 
 .menu-item:nth-child(3) {
-  grid-column: 1;
   grid-row: 3;
-  border-bottom: none;
 }
 
 .menu-title {
@@ -821,26 +1132,16 @@ section {
   color: #85ada0;
 }
 
-.recruitment-content {
-  flex: 1; /* 남은 공간 모두 차지 */
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px; /* 세로 큰 그룹 간격 */
-}
-
 .content-header,
 .recruitment-check-list,
 .process-steps {
+  grid-column: 2/4;
   padding: 32px;
-  border-bottom: 1px solid #e9ecef;
   background: #fff;
 }
 
 /* 컨텐츠 상단 (뱃지, 날짜, D-day) */
 .content-header {
-  grid-column: 2/4;
-  grid-row: 1;
   display: flex;
   align-items: center;
   justify-content: space-between; /* 양 끝 정렬 */
@@ -864,14 +1165,13 @@ section {
 
 /* 체크리스트 */
 .recruitment-check-list {
-  grid-column: 2/4;
-  grid-row: 2;
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
   list-style: none;
-  padding: 0;
 }
 
 .check-item {
@@ -885,36 +1185,19 @@ section {
 }
 
 .process-steps {
-  grid-column: 2/4;
-  grid-row: 3;
-
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* 단계들 균등 배치 */
-  gap: 8px;
+  gap: 32px;
   list-style: none;
-  padding: 0;
-
-  border-bottom: none;
 }
 
 .step {
+  position: relative;
   flex: 1;
-
   display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* 마지막 단계는 화살표가 없으므로 제외 */
-.step:last-child .arrow {
-  display: none;
 }
 
 .step-box {
-  flex: 1;
-
-  min-height: 96px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -935,10 +1218,123 @@ section {
 }
 
 .arrow {
+  position: absolute;
+  width: 24px;
+
+  right: -29px;
+  top: 50%;
+  transform: translateY(-50%); /* 자신의 높이를 기준으로 수직 중앙 정렬 */
+
+  z-index: 1;
+
   color: #adb5bd;
-  font-size: 20px;
+  font-size: 24px;
 }
-/* recruitment section css */
+/* //recruitment section css */
+/* faq section css */
+.section-faq .container {
+  position: relative;
+}
+
+.section-faq .container .section-title-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+/* FAQ 리스트 스타일 */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* 질문 영역 (Trigger) */
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+.question-text {
+  color: #1b4137;
+  transition: color 0.3s;
+}
+
+.arrow-icon {
+  color: #48bb78; /* light green */
+  transition: transform 0.3s;
+}
+
+/* 답변 영역 */
+.faq-answer {
+  background-color: #fafafa; /* light gray */
+  padding: 32px;
+}
+
+.answer-inner {
+  color: #4a5568;
+}
+
+/* 리스트 및 상세 스타일 */
+.answer-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.answer-check-list li {
+  margin-bottom: 15px;
+}
+
+.sub-bullet-list {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.notice-text {
+  color: #718096;
+  margin-top: 20px;
+}
+
+/* --- 활성화 상태 (Active) --- */
+.faq-item--active {
+  border-color: #48bb78; /* 활성 상태 테두리 강조 */
+}
+
+.faq-item--active .question-text {
+  color: #2f855a; /* alyak green */
+}
+
+/* "더 많은 질문 보기" 버튼 */
+.btn-text {
+  position: absolute;
+  top: 48px;
+  right: 0; /* 우측 끝으로 밀착 */
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #1b4137;
+  text-decoration: none;
+}
+/* //faq section css */
 
 /* 컨텐츠5 - 최호찬 */
 /* navigation section css */

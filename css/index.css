@@ -660,10 +660,12 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 16px;
+  overflow: visible;
 }
 .curriculum-list li {
   width: 272px;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -677,14 +679,16 @@ section {
   box-sizing: border-box;
 }
 
-.curriculum-list span {
-  display: flex;
-  align-items: center;
-}
-
 .curriculum-list li > p {
   color: var(--background-grey);
   padding: 0 4px 0 0;
+}
+
+.curriculum-list li > span.material-icons {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .curriculum-overlay {

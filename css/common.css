@@ -83,6 +83,7 @@
 }
 
 .body-normal-medium {
+  flex: 1;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 16px;

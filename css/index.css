@@ -1582,7 +1582,6 @@ aside .menu-info:hover {
 .section-navigation .container {
   height: 48px;
   color: var(--white);
-  padding: 0 auto;
 }
 .section-navigation .container ul {
   gap: 50px;

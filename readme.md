@@ -210,10 +210,6 @@ git clone https://github.com/xoxoworld/EST_fe_13_1st_project
 [![기획서 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/XXXX "피그마 슬라이드로 이동")
 [![디자인 미리보기](./public/readme/figma-slides-thumb.png)](https://www.figma.com/file/YYYY "피그마 디자인으로 이동")
 
-### 7.2 버전 메모
-
-- v1.0(2025-08-12): 핵심 화면/플로우 확정
-- v1.1(2025-08-15): 모바일 브레이크포인트/컴포넌트 토큰 보강
 
 ```
 

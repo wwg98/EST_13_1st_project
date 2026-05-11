@@ -1189,6 +1189,10 @@ section {
   background-color: #e2e3e0;
   padding: 8px 16px;
   border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .date-range {
@@ -1199,6 +1203,10 @@ section {
 
 .d-day-text {
   color: #ff6b00; /* 오렌지색 강조 */
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* 체크리스트 */

@@ -1,8 +1,8 @@
 # 1st Team Project 8(1차 프로젝트 8조
 
-- - 과정명: 프로젝트기반 프론트엔드 개발자 양성(Figm/HTML/css/JSREACT)
+- 과정명: 프로젝트기반 프론트엔드 개발자 양성(Figm/HTML/css/JSREACT)
 - 기간: 26/04/07 ~ 26/08/21
-- 3차 프로젝트: 26/04/30 ~ 26/05/12
+- 1차 프로젝트: 26/04/30 ~ 26/05/12
 
 ## 🔗 빠른 링크
 
@@ -30,46 +30,69 @@
 
 ### 1.3 🗓️ 마일스톤
 
-#### 1일차 — 프로젝트 이해 & 환경 세팅
+#### 1~3일차 — 프로젝트 이해 & 환경 세팅
 
-- [ ] Figma 디자인 분석 (레이아웃, 색상, 폰트, 이미지 등 파악)
-- [ ] 페이지 구성 요소 목록 작성 (헤더, 네비게이션, 섹션, 푸터 등)
-- [ ] 필요한 이미지, 아이콘, 폰트 등의 자산 추출/준비
-- [ ] GitHub 저장소 생성 및 로컬 환경 연결
+- [ ] 사이트 분석, 현황 체크
+- [ ] 벤치 마킹
+- [ ] 리뉴얼 개선안 설정
+- [ ] 와이어 프레임 생성
 
-#### 2일차 — HTML 구조 구현
+#### 4~9일차 — figma 디자인
 
-- [ ] 시맨틱 태그를 사용하여 전체 HTML 골격 작성
-- [ ] 헤더/메뉴/메인 섹션/푸터의 기본 마크업 완료
+- [ ] 섹션별 초기 디자인 안을 구성
+- [ ] 사용할 폰트, 색상을 style로 지정
 - [ ] 각 섹션별 더미 텍스트/이미지 삽입
+- [ ] 피드백 후 배치, 디자인 수정
 
-#### 3일차 — CSS 기본 스타일링
+#### 10~15일차 — HTML, CSS 구현
 
-- [ ] Figma 기준 색상, 폰트, 간격 적용
-- [ ] 공통 스타일(리셋·폰트·변수) 적용
-- [ ] 공통요소 스타일 적용
-- [ ] 헤더·메인·푸터 등 주요 파트 스타일 완성
+- [ ] GitHub 저장소 생성 및 로컬 환경 연결
+- [ ] 공용 CSS, 디자인시안 적용
+- [ ] 시맨틱 태그를 사용하여 전체 HTML 골격 작성
+- [ ] 각 섹션을 완성, 피드백, 수정을 반복
 
-#### 4일차 — 세부 디자인 반영
+#### 15일차 — 세부 디자인 반영
 
-- [ ] 버튼·폼·이미지 등 세부 요소 스타일링
-- [ ] Figma와 디자인 비교·오차 수정
 - [ ] 웹표준 & 웹접근성 검사 및 수정
-- [ ] 코드 정리 및 주석 작성
-
-#### 5일차 — 기능 점검 & 배포 준비
-
-- [ ] 크로스 브라우저 테스트(Chrome, Edge 등)
+- [ ] GitHub Pages 배포 설정 / 공유
 - [ ] ReadMe.md 작성
-- [ ] GitHub Pages 배포 설정
-- [ ] 배포 후 URL 공유
-
-#### 6일차 — 발표 자료 준비 & 리허설
-
-- [ ] 프로젝트 개요·디자인 특징·구현 과정 정리
-- [ ] 스크린샷 및 시연 영상 준비
 - [ ] 발표 리허설 & Q&A 준비
-- [ ] 발표 진행
+
+```mermaid
+%%{init: { 'theme': 'dark', 'themeVariables': {
+    'doneTaskBkgColor': '#000000',
+    'doneTaskBorderColor': '#ffffff',
+    'taskBkgColor': '#000000',
+    'taskBorderColor': '#ffffff',
+    'taskTextColor': '#ffffff',
+    'taskTextLightColor': '#ffffff',
+    'taskTextDarkColor': '#ffffff',
+    'sectionBkgColor': '#1a1a1a',
+    'altSectionBkgColor': '#000000'
+}}}%%
+gantt
+    title 1차 팀프로젝트 8조 Milestones
+    dateFormat  YYYY-MM-DD
+    excludes    weekends
+
+    section 기획, 설계
+    현항분석                :done, a1, 2026-04-28, 2d
+    벤치마킹, 리뉴얼안       :done, a2, 2026-04-29, 1d 
+
+    section figma 디자인
+    figma 와이어 프레임      :b1, 2026-04-30, 1d
+    figma 디자인             :b2, after b1, 1.5d
+    figma 디자인 수정        :b3, after b2, 2d
+
+    section 구현
+    HTML, CSS                :c1, 2026-05-07, 4d
+    검사, 배포준비            :c2, 2026-05-11, 1d
+
+    section 릴리스
+    1차 기획안 발표          :d1, 2026-04-30, 1d
+    2차 피그마 디자인 제출    :d2, 2026-05-06, 1d
+    3차 최종안 발표, 배포     :d3, 2026-05-12, 1d
+```
 
 ### 1.5 주요 기능
 
@@ -103,12 +126,7 @@
 
 #### Frontend
 
-- **Framework**: Next.js 15.x (App Router)
-- **Language**: JavaScript / TypeScript
 - **Styling**: CSS Modules / Tailwind CSS
-- **Routing**: Next.js 라우팅(App Router)
-- **Image Handling**: next/image
-- **State Management**: useState, useEffect, SWR 또는 React Query 선택 가능
 
 #### Tools
 
@@ -150,22 +168,17 @@
 
 ```
 
-portfolio-nextjs_supabase/
-├─ public/
-├─ src/
-│ ├─ app/ # Next.js App Router
-│ │ ├─ layout.(js|tsx)
-│ │ ├─ page.(js|tsx)
-│ │ └─ ... # route segments
-│ ├─ components/ # 재사용 컴포넌트
-│ ├─ lib/ # Supabase 클라이언트 등
-│ │ └─ supabase/client.(js|ts)
-│ ├─ styles/ # 전역/모듈 스타일
-│ └─ utils/ # 유틸 함수
-├─ .env.example # 환경변수 예시
-├─ next.config.mjs
-├─ package.json
-└─ README.md
+EST_fe_13_1st_project/
+├─ css/
+│  ├─ common.css
+│  ├─ flex-utility.css
+│  ├─ index.css
+│  ├─ normalize.css
+│  └─ reset.css
+├─ images/
+├─ common.html
+├─ index.html
+└─ readme.md
 
 ## 7. 향후 개선 사항
 

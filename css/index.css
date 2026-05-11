@@ -1370,10 +1370,10 @@ section {
 .text-orange {
   color: var(--orange);
 }
-.section-employment h1:first-child {
+.section-employment h2:first-child {
   margin-bottom: var(--base-unit);
 }
-.section-employment h2:nth-of-type(2) {
+.section-employment h2:last-child {
   margin-bottom: 40px;
 }
 .box-employment {

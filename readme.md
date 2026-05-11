@@ -153,14 +153,6 @@ gantt
 
 - **Production**: https://xoxoworld.github.io/EST_fe_13_1st_project/
 
-### 2.3 📚 개발 컨벤션 가이드
-
-프로젝트에서 사용하는 HTML, CSS, JavaScript 작성 규칙은 아래 문서를 참고하세요.
-
-- [HTML 컨벤션](docs/guide_html.md)
-- [CSS 컨벤션](docs/guide_css.md)
-- [JavaScript 컨벤션](docs/guide_js.md)
-
 ---
 
 ## 3. 프로젝트 구조

@@ -142,7 +142,7 @@ gantt
 
 #### Frontend
 
-- **Styling**: CSS Modules / Tailwind CSS
+- **Styling**: CSS Modules
 
 #### Tools
 

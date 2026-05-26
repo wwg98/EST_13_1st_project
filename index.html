@@ -17,6 +17,27 @@
     <link rel="stylesheet" href="css/flex-utility.css" />
   </head>
   <body>
+    <!--팝업-->
+    <div id="popup" class="popup body-normal-medium">
+      <h2 class="body-large-medium">오르미 부트캠프 신청 사이트 리뉴얼 프로젝트</h2>
+      <p>본 사이트는 팀 프로젝트 포트폴리오 사이트입니다.</p>
+      <hr />
+      <p>과정명 : [13기] 프론트엔드 개발자 부트캠프</p>
+      <p>제작 기간 : 26/04/30 ~ 26/05/12</p>
+      <p>개발 환경 : HTML, CSS</p>
+      <p>
+        소스 관리 :
+        <a href="https://github.com/wwg98/EST_13_1st_project" target="_blank">GitHub 바로가기</a>
+      </p>
+      <hr />
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <input type="checkbox" id="agree" />
+          <label for="agree" style="cursor: pointer"> 하루 안보기</label>
+        </div>
+        <button id="closeBtn">닫기</button>
+      </div>
+    </div>
     <!--이성희-->
     <header class="header">
       <div class="header-container">
@@ -1184,5 +1205,28 @@
       </div>
     </footer>
     <!--//최호찬-->
+    <script>
+      const popup = document.querySelector("#popup");
+      const popupCloseBtn = popup.querySelector("button");
+      const agree = document.querySelector("#agree");
+
+      popup.style.display = document.cookie.includes("popup=안볼래") ? "none" : "block";
+
+      function createCookie(name, value, expire) {
+        let today = new Date();
+        today.setDate(today.getDate() + expire);
+        document.cookie = `${name}=${value}; Expires=${today.toString()}`;
+      }
+
+      console.log(agree.checked);
+      popupCloseBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+        if (agree.checked) {
+          createCookie("popup", "안볼래", 1);
+        } else {
+          createCookie("popup", "안볼래", -1);
+        }
+      });
+    </script>
   </body>
 </html>

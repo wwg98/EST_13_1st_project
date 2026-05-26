@@ -1704,3 +1704,42 @@ footer .container {
   display: block;
 }
 /* 컨텐츠6 - 김태현 */
+
+.popup {
+  position: fixed;
+  width: 450px;
+  left: 50px;
+  top: 50px;
+  padding: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 0;
+  border: none;
+  color: #000;
+  z-index: 9999;
+}
+.popup h2 {
+  margin: 0 0 15px 0;
+  line-height: var(--base-unit);
+}
+
+.popup p {
+  margin: 8px 0;
+  line-height: var(--base-unit);
+}
+
+.popup p > a {
+  color: var(--orange);
+}
+
+.popup p:first-of-type {
+  margin-bottom: 20px;
+}
+
+#closeBtn {
+  height: var(--base-unit);
+  border: 1px solid #999999;
+  background-color: transparent;
+  border-radius: 4px;
+  color: var(--navy);
+}
